@@ -1,3 +1,6 @@
+/* Bitter — heading face for the heritage theme. See DESIGN.md note on self-hosting. */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&display=swap');
+
 :root {
   --bg: #111827;
   --panel: #ffffff;
@@ -526,5 +529,187 @@ main > :not(:first-child) {
   .hamburger span {
    width: 20px;
    height: 2px;
+  }
+}
+
+/* ===== Heritage theme — cream paper, slab serif headings, ruled borders =====
+   Adopted direction (see DESIGN.md). Overrides the base tokens above. */
+
+:root {
+  --bg: #26211b;
+  --panel: #fffdf7;
+  --text: #2b2620;
+  --brand: #a61b1b;
+  --brand-dark: #7f1d1d;
+  --shadow: none;
+  --radius: 8px;
+}
+
+body {
+  background: #f6f1e7;
+}
+
+h1, h2, h3 {
+  font-family: 'Bitter', Georgia, 'Times New Roman', serif;
+}
+
+.site-header {
+  background: var(--panel);
+  border-bottom: 3px solid var(--brand);
+  box-shadow: none;
+}
+
+.nav-link {
+  border-radius: 4px;
+}
+
+.hero::before {
+  background: linear-gradient(180deg, rgba(20, 12, 8, 0.45), rgba(20, 12, 8, 0.55));
+}
+
+.hero-panel {
+  background: rgba(255, 253, 247, 0.95);
+  border-left: 5px solid var(--brand);
+  border-radius: 4px;
+  padding: 1.4rem 1.6rem;
+}
+
+.hero-panel .eyebrow {
+  color: var(--brand);
+}
+
+.hero-panel h1 {
+  color: var(--text);
+  text-shadow: none;
+}
+
+.hero-panel .intro {
+  color: #4d453a;
+  text-shadow: none;
+}
+
+.meta-line,
+.meta-inline {
+  color: var(--brand);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+}
+
+.card {
+  border: 1px solid #e4dcc9;
+  box-shadow: none;
+}
+
+.card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.card-feature {
+  background: var(--panel);
+}
+
+.card-accent {
+  background: #fbf3e4;
+  border-color: #ecd9b8;
+}
+
+.media-image {
+  border-radius: 6px;
+}
+
+.gallery-image {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #e4dcc9;
+}
+
+.button,
+.button-secondary {
+  border-radius: 8px;
+}
+
+.site-footer {
+  background: var(--bg);
+}
+
+.footer-links a {
+  color: #e8b98a;
+}
+
+/* ===== Heritage layout components ===== */
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: 3px;
+  background: var(--brand);
+  opacity: 0.3;
+  border-radius: 2px;
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 1.35rem 2.3rem;
+}
+
+.timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  box-sizing: border-box;
+  background: var(--panel);
+  border: 4px solid var(--brand);
+  border-radius: 50%;
+}
+
+.timeline .year {
+  display: block;
+  font-weight: 800;
+  color: var(--brand);
+  letter-spacing: 0.04em;
+}
+
+.timeline p {
+  margin: 0.15rem 0 0;
+}
+
+/* Wide image + text banner (Postie GP) */
+.gp-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.gp-banner .media-image {
+  margin-bottom: 0;
+  height: 100%;
+  max-height: 22rem;
+  object-fit: cover;
+}
+
+@media (max-width: 820px) {
+  .gp-banner {
+    grid-template-columns: 1fr;
   }
 }
