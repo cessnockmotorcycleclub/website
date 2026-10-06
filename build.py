@@ -11,6 +11,10 @@ from site_data import FOOTER_LINKS, NAV_ITEMS, PAGES, SITE_DESCRIPTION, SITE_NAM
 
 ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
+
+# Copied verbatim into the site root. Cloudflare Pages publishes dist/ exactly as
+# the build leaves it, so these must be copied here rather than by the CI workflow.
+ROOT_FILES = ('robots.txt',)
 ASSETS_SRC = ROOT / "assets"
 ASSETS_DST = DIST / "assets"
 CONTENT_ROOT = ROOT / "content"
@@ -525,6 +529,8 @@ def main() -> None:
     _404_src = ROOT / '404.html'
     _404_dst = DIST / '404.html'
     _404_dst.write_text(_fingerprint_html(_404_src.read_text(encoding='utf-8')), encoding='utf-8')
+    for name in ROOT_FILES:
+        shutil.copy2(ROOT / name, DIST / name)
     print(f"Built {len(pages)} pages into {DIST}")
 
 
