@@ -39,17 +39,14 @@ PAGES = [
         'hero_image': 'assets/legacy-sweep/gallery-03.jpg',
         'content': '''
 <section class="card">
-  <h2>More than a century, in nine moments</h2>
+  <h2>More than a century, in six moments</h2>
   <ul class="timeline">
-    <li><span class="year">Before 1923</span><p>Riders are already gathering around Cessnock — how far back, nobody now knows.</p></li>
-    <li><span class="year">1923</span><p>The club is formally incorporated. This is the date we count from.</p></li>
-    <li><span class="year">1978</span><p>The Australian Four Day Enduro is born here — Cessnock is its original home.</p></li>
-    <li><span class="year">1992</span><p>The International Six Days Enduro comes to town, run on the back of club volunteers.</p></li>
-    <li><span class="year">2013</span><p>90th anniversary celebrations.</p></li>
-    <li><span class="year">2014</span><p>The first Australian Postie Bike GP takes over the CBD.</p></li>
-    <li><span class="year">2018</span><p>The club runs the Australian Four Day Enduro — our most recent competitive event. <a href="archive/a4de-2018/">See the archive</a>.</p></li>
-    <li><span class="year">2023</span><p>Centenary celebrations — 100 years since incorporation.</p></li>
-    <li><span class="year">Today</span><p>The oldest active motorcycle club in Australia, and a social one — regular rides, good company, and one very loud day of postie racing a year.</p></li>
+    <li><span class="year">Before 1923</span><p>Riders are already gathering around Cessnock.</p></li>
+    <li><span class="year">1923</span><p>The club is formally incorporated.</p></li>
+    <li><span class="year">1978</span><p>The Australian Four Day Enduro is born here.</p></li>
+    <li><span class="year">2014</span><p>The first Australian Postie Bike GP closes the CBD.</p></li>
+    <li><span class="year">2023</span><p>Centenary — 100 years since incorporation.</p></li>
+    <li><span class="year">Today</span><p>Australia's oldest active motorcycle club, now a social one.</p></li>
   </ul>
   <p><a class="button button-secondary" href="about/">Read the full story</a></p>
 </section>
