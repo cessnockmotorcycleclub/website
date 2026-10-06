@@ -80,7 +80,6 @@ The static build will automatically generate:
 
 This conversion is based on the public content available on the legacy site. Before pointing the real domain at the new build, review these details carefully:
 
-- **founding year (1923)** — the homepage and About timeline both lead with it
 - **first Australian Four Day Enduro (1978)** and **first Postie Bike GP (2014)**
 - **membership pricing** ($30 single / $50 family, up to 6 members)
 - committee names and roles
@@ -88,6 +87,12 @@ This conversion is based on the public content available on the legacy site. Bef
 - sponsorship references
 - any historical pages you may no longer want publicly listed
 - whether you want additional legacy galleries or documents copied into this repo as well
+
+Confirmed by the club on 2026-10-07 and now stated on the site: 1923 is the club's
+**formal incorporation** (its origins run an unknown number of years earlier), the club
+is the **oldest active motorcycle club in Australia**, and it ran the **Australian Four
+Day Enduro in 2018** — its most recent competitive event. The "oldest active" claim is
+prominent on the homepage, About, and membership pages; it is the club's own assertion.
 
 The events calendar is **empty of upcoming events** — it lists only the two archived
 historical events. Real ride and meeting dates need to come from the committee before

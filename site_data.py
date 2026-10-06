@@ -2,9 +2,9 @@ from __future__ import annotations
 
 SITE_NAME = 'Cessnock Motor Cycle Club'
 SITE_DESCRIPTION = (
-    'A social motorcycle club in the Hunter Valley with 103 years of '
-    'history. Regular rides and catch-ups, a welcoming community, and '
-    'home of the Australian Postie Bike GP.'
+    'The oldest active motorcycle club in Australia, riding in the Hunter '
+    'Valley since before 1923. Regular rides and catch-ups, a welcoming '
+    'community, and home of the Australian Postie Bike GP.'
 )
 NAV_ITEMS = [
     {'label': 'Home', 'slug': ''},
@@ -32,21 +32,23 @@ PAGES = [
     {
         'slug': '',
         'title': 'A century of motorcycling, and still riding',
-        'eyebrow': 'Est. 1923 · Cessnock NSW',
-        'intro': 'Cessnock Motor Cycle Club is one of the oldest motorcycle clubs in Australia. The racing years made our name — the riding, and the people, keep us going.',
+        'eyebrow': 'Incorporated 1923 · Cessnock NSW',
+        'intro': 'Cessnock Motor Cycle Club is the oldest active motorcycle club in Australia. The racing years made our name — the riding, and the people, keep us going.',
         'description': SITE_DESCRIPTION,
         'body_class': 'hero-home',
         'hero_image': 'assets/legacy-sweep/gallery-03.jpg',
         'content': '''
 <section class="card">
-  <h2>103 years in six moments</h2>
+  <h2>More than a century, in eight moments</h2>
   <ul class="timeline">
-    <li><span class="year">1923</span><p>The club is founded in Cessnock.</p></li>
+    <li><span class="year">Before 1923</span><p>Riders are already gathering around Cessnock — how far back, nobody now knows.</p></li>
+    <li><span class="year">1923</span><p>The club is formally incorporated. This is the date we count from.</p></li>
     <li><span class="year">1978</span><p>The Australian Four Day Enduro is born here — Cessnock is its original home.</p></li>
     <li><span class="year">1992</span><p>The International Six Days Enduro comes to town, run on the back of club volunteers.</p></li>
     <li><span class="year">2013</span><p>90th anniversary celebrations.</p></li>
     <li><span class="year">2014</span><p>The first Australian Postie Bike GP takes over the CBD.</p></li>
-    <li><span class="year">Today</span><p>A social riding club — regular rides, good company, and one very loud day of postie racing a year.</p></li>
+    <li><span class="year">2018</span><p>The club runs the Australian Four Day Enduro — our most recent competitive event. <a href="archive/a4de-2018/">See the archive</a>.</p></li>
+    <li><span class="year">Today</span><p>The oldest active motorcycle club in Australia, and a social one — regular rides, good company, and one very loud day of postie racing a year.</p></li>
   </ul>
   <p><a class="button button-secondary" href="about/">Read the full story</a></p>
 </section>
@@ -86,24 +88,26 @@ PAGES = [
     {
         'slug': 'about',
         'title': 'Our story',
-        'eyebrow': 'Est. 1923',
-        'intro': 'One of the oldest motorcycle clubs in the country — a century of off road history in Cessnock, and a new chapter built around social riding.',
-        'description': 'The history and present-day focus of Cessnock Motor Cycle Club, established 1923.',
+        'eyebrow': 'Incorporated 1923',
+        'intro': 'The oldest active motorcycle club in Australia — more than a century of riding in Cessnock, and a new chapter built around social riding.',
+        'description': 'The history and present-day focus of Cessnock Motor Cycle Club — the oldest active motorcycle club in Australia, incorporated 1923.',
         'hero_image': 'assets/legacy-sweep/gallery-03.jpg',
         'content': '''
 <section class="card prose">
-  <p>Cessnock Motor Cycle Club has been part of the Hunter Valley for <strong>103 years</strong>. Generations of local families have ridden, raced, volunteered, and made lifelong friends through the club — from grass track and enduro through to the club days and social rides of today.</p>
+  <p>Cessnock Motor Cycle Club is the <strong>oldest active motorcycle club in Australia</strong>. It was formally incorporated in <strong>1923</strong> — and riders were already gathering here for some years before that, though how many is no longer known. Generations of local families have ridden, raced, volunteered, and made lifelong friends through the club — from grass track and enduro through to the club days and social rides of today.</p>
   <p>Cessnock earned a reputation as one of Australia's great dirt bike towns. The Australian Four Day Enduro began here, and in 1992 the club community was at the heart of bringing the International Six Days Enduro to Cessnock — the biggest event the town had seen.</p>
 </section>
 <section class="card">
-  <h2>A century in short</h2>
+  <h2>More than a century, in short</h2>
   <ul class="timeline">
-    <li><span class="year">1923</span><p>The club is founded — 103 years of motorcycling in Cessnock.</p></li>
+    <li><span class="year">Before 1923</span><p>Riders were already gathering around Cessnock. The club's origins predate its paperwork by an unknown number of years.</p></li>
+    <li><span class="year">1923</span><p>The club is formally incorporated in Cessnock. This is the date the club counts from.</p></li>
     <li><span class="year">1978</span><p>The Australian Four Day Enduro is born in Cessnock, the event's original home.</p></li>
     <li><span class="year">1992</span><p>The International Six Days Enduro comes to Cessnock, powered by club volunteers.</p></li>
     <li><span class="year">2013</span><p>The club celebrates its 90th anniversary.</p></li>
     <li><span class="year">2014</span><p>The first Australian Postie Bike GP takes over the streets of the Cessnock CBD.</p></li>
-    <li><span class="year">Today</span><p>A social riding club: regular rides, club catch-ups, and one very big day of postie bike racing each year.</p></li>
+    <li><span class="year">2018</span><p>The club runs the Australian Four Day Enduro — its most recent competitive event. <a href="../archive/a4de-2018/">See the archive page</a>.</p></li>
+    <li><span class="year">Today</span><p>The oldest active motorcycle club in Australia, and a social one: regular rides, club catch-ups, and one very big day of postie bike racing each year.</p></li>
   </ul>
 </section>
 <section class="card prose">
@@ -252,7 +256,7 @@ PAGES = [
 <section class="grid two-up">
   <article class="card prose">
     <h2>A club is its people</h2>
-    <p>Everything the club does — the rides, the catch-ups, the Postie Bike GP — happens because members put their hands up. There are no paid staff; there never have been in 103 years.</p>
+    <p>Everything the club does — the rides, the catch-ups, the Postie Bike GP — happens because members put their hands up. There are no paid staff; there never have been in more than a century.</p>
     <p>Whether you ride every weekend or haven't swung a leg over a bike in years, there's a place for you. Plenty of our members are here for the company as much as the riding.</p>
   </article>
   <article class="card">
@@ -276,14 +280,14 @@ PAGES = [
         'slug': 'membership',
         'title': 'Membership',
         'eyebrow': 'Join the club',
-        'intro': 'Cheap as chips, and you become part of 103 years of history.',
+        'intro': 'Cheap as chips, and you become part of more than a century of history.',
         'description': 'Membership information and pricing for Cessnock Motor Cycle Club.',
         'content': '''
 <section class="grid two-up">
   <article class="card prose">
     <h2>What membership gives you</h2>
     <ul>
-      <li>Be part of a club that has been riding since 1923.</li>
+      <li>Be part of the oldest active motorcycle club in Australia, riding since before 1923.</li>
       <li>Join social rides, club days, and get-togethers through the year.</li>
       <li>Motorcycling NSW affiliation — licensing and event insurance are available through the club when needed.</li>
       <li>Help keep the Australian Postie Bike GP and the club's community work going.</li>

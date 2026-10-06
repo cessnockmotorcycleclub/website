@@ -38,10 +38,16 @@ Three layout prototypes were put to the club in September 2026. The club chose t
 instead of shadows, and a homepage led by a **timeline** of the club's century
 rather than by a calendar or a marketing hero.
 
-This reframes the whole site. Cessnock Motor Cycle Club is a **103-year-old social
-riding club** — not the "leading enduro club" the legacy site claimed. It still hosts
-the Australian Postie Bike GP, but as a signature once-a-year public event, not its
-primary purpose. Copy throughout should reflect that.
+This reframes the whole site. Cessnock Motor Cycle Club is the **oldest active
+motorcycle club in Australia** and today a **social riding club** — not the "leading
+enduro club" the legacy site claimed. It still hosts the Australian Postie Bike GP,
+but as a signature once-a-year public event, not its primary purpose. Copy throughout
+should reflect that.
+
+On dates: **1923 is formal incorporation, not founding.** The club was riding for an
+unknown number of years before that, so copy says "more than a century" and "since
+before 1923" rather than a precise age. Don't reintroduce a hard number like
+"103 years" — it understates the club and implies a founding date we don't have.
 
 The sections below describe the adopted system. The earlier dark-hero/white-card
 scheme is retired.

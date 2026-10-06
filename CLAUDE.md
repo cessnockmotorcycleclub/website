@@ -47,11 +47,15 @@ Bitter loads from Google Fonts via an `@import` in `assets/styles.css` — the s
 
 ## Content positioning
 
-The club is a **103-year-old social riding club** (est. ~1923) that has not run competitive events for years. It hosts the Australian Postie Bike GP, but as a signature once-a-year public event, not its primary purpose. The legacy site's "Hunter Valley's leading enduro club" framing was inherited by the first rebuild and has been removed — don't reintroduce it.
+The club is the **oldest active motorcycle club in Australia**, and today a **social riding club**. It hosts the Australian Postie Bike GP, but as a signature once-a-year public event, not its primary purpose. The legacy site's "Hunter Valley's leading enduro club" framing was inherited by the first rebuild and has been removed — don't reintroduce it.
+
+**Dates: 1923 is formal incorporation, not founding.** The club predates its paperwork by an unknown number of years. Copy therefore says "more than a century" / "since before 1923" and never a precise age — the old "103 years" phrasing was removed for exactly this reason, so don't reintroduce it. The club's most recent competitive event was the **Australian Four Day Enduro in 2018** (archive page `archive/a4de-2018` exists), which is what "it has been some years since" refers to.
 
 ## Content caveats
 
-Migrated legacy content (committee names, membership pricing, meeting details) is pending owner review before launch — don't treat it as verified. Specifically unconfirmed and currently stated as fact on the live pages: **founding year 1923**, first A4DE **1978**, first Postie GP **2014**, pricing **$30 single / $50 family**.
+Migrated legacy content (committee names, membership pricing, meeting details) is pending owner review before launch — don't treat it as verified. Still unconfirmed and currently stated as fact on the live pages: first A4DE **1978**, first Postie GP **2014**, pricing **$30 single / $50 family**.
+
+Confirmed by the owner (2026-10-07): **1923 = formal incorporation**, origins earlier but unknown; **oldest active motorcycle club in Australia**; **A4DE run by the club in 2018**. The "oldest active" line is a strong public claim that now appears on the homepage, About, membership and in the site description — it is owner-asserted, not independently checked.
 
 The **events calendar has no upcoming entries** — only the two archived historical events. Three sample events existed in the design prototypes but were deliberately not shipped: publishing invented ride dates on a live club site risks people turning up to nothing.
 
