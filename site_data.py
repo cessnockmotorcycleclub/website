@@ -2,19 +2,17 @@ from __future__ import annotations
 
 SITE_NAME = 'Cessnock Motor Cycle Club'
 SITE_DESCRIPTION = (
-    'A family-friendly off road motorcycle club in the Hunter Valley, '
-    'focused on safe, welcoming enduro-style events for riders of all ages.'
+    'The oldest active motorcycle club in Australia, riding in the Hunter '
+    'Valley since before 1923. Regular rides and catch-ups, a welcoming '
+    'community, and home of the Australian Postie Bike GP.'
 )
 NAV_ITEMS = [
     {'label': 'Home', 'slug': ''},
-    {'label': 'About', 'slug': 'about'},
-    {'label': 'News', 'slug': 'news'},
-    {'label': 'Events', 'slug': 'events'},
-    {'label': 'Get involved', 'slug': 'get-involved'},
-    {'label': 'Membership', 'slug': 'membership'},
+    {'label': 'Our story', 'slug': 'about'},
+    {'label': 'What\'s on', 'slug': 'events'},
     {'label': 'Gallery', 'slug': 'gallery'},
-    {'label': 'Sponsors', 'slug': 'sponsors'},
-    {'label': 'Archive', 'slug': 'archive'},
+    {'label': 'Postie Bike GP', 'slug': 'postie-bike-gp'},
+    {'label': 'Membership', 'slug': 'membership'},
     {'label': 'Contact', 'slug': 'contact'},
 ]
 
@@ -22,6 +20,9 @@ FOOTER_LINKS = [
     {'label': 'Club officials', 'href': 'officials', 'external': False},
     {'label': 'Meetings', 'href': 'meetings', 'external': False},
     {'label': 'Remembrance', 'href': 'remembrance', 'external': False},
+    {'label': 'Gallery', 'href': 'gallery', 'external': False},
+    {'label': 'Sponsors', 'href': 'sponsors', 'external': False},
+    {'label': 'Archive', 'href': 'archive', 'external': False},
     {'label': 'Facebook', 'href': 'https://www.facebook.com/cessnockmotorcycleclub/', 'external': True},
     {'label': 'YouTube', 'href': 'https://www.youtube.com/user/cessnockmcc/', 'external': True},
     {'label': 'Email us', 'href': 'mailto:info@cessnockmcc.com.au', 'external': True},
@@ -30,85 +31,98 @@ FOOTER_LINKS = [
 PAGES = [
     {
         'slug': '',
-        'title': 'Welcome to Cessnock Motor Cycle Club',
-        'eyebrow': 'Hunter Valley off road motorcycle club',
-        'intro': 'Family-friendly riding, volunteer-led events, and a strong enduro culture for juniors, social riders, and serious racers alike.',
+        'title': 'A century of motorcycling, and still riding',
+        'eyebrow': 'Incorporated 1923 · Cessnock NSW',
+        'intro': 'Cessnock Motor Cycle Club is the oldest active motorcycle club in Australia. The racing years made our name — the riding, and the people, keep us going.',
         'description': SITE_DESCRIPTION,
         'body_class': 'hero-home',
-        'hero_image': 'home-hero.jpg',
+        'hero_image': 'assets/legacy-sweep/gallery-03.jpg',
         'content': '''
-<section class="grid two-up">
-  <article class="card media-card">
-    <img class="media-image media-tall" src="/assets/media/home-hero.jpg" alt="Cessnock Motor Cycle Club homepage slide from the legacy site">
-  </article>
-  <article class="card media-card">
-    <div class="video-frame">
-      <iframe src="https://www.youtube.com/embed/d5CjbK55g7A?rel=0" title="Cessnock Motor Cycle Club video" loading="lazy" allowfullscreen></iframe>
-    </div>
-  </article>
+<section class="card">
+  <h2>More than a century, in six moments</h2>
+  <ul class="timeline">
+    <li><span class="year">Before 1923</span><p>Riders are already gathering around Cessnock.</p></li>
+    <li><span class="year">1923</span><p>The club is formally incorporated.</p></li>
+    <li><span class="year">1978</span><p>The Australian Four Day Enduro is born here.</p></li>
+    <li><span class="year">2014</span><p>The first Australian Postie Bike GP closes the CBD.</p></li>
+    <li><span class="year">2023</span><p>Centenary — 100 years since incorporation.</p></li>
+    <li><span class="year">Today</span><p>Australia's oldest active motorcycle club, now a social one.</p></li>
+  </ul>
+  <p><a class="button button-secondary" href="about/">Read the full story</a></p>
 </section>
 <section class="grid two-up">
-  <article class="card card-feature">
-    <h2>What the club is about</h2>
-    <p>Cessnock Motor Cycle Club focuses on safe, enjoyable off road events for juniors from 85cc big wheels through to experienced riders in senior classes. The club culture is welcoming, community-minded, and built around helping riders improve while still keeping a competitive edge for those who want to race hard.</p>
-    <p>Across the year the club hosts and supports enduro, enduro sprint, grass track, cross country, pony express, motocross, dirt track, trials, social rides, and junior coaching.</p>
+  <article class="card prose">
+    <h2>The club today</h2>
+    <p>It's been years since our last competitive event, and that suits us fine. The calendar now is social rides through the Hunter, club catch-ups at the Khartoum Hotel, and the volunteer effort behind the <a href="postie-bike-gp/">Australian Postie Bike GP</a>.</p>
+    <p>New faces are always welcome — you don't need to be fast, and you don't even need a dirt bike.</p>
   </article>
-  <aside class="card card-accent">
-    <h2>Quick links</h2>
+  <aside class="card card-accent card-v">
+    <h2>Be part of it</h2>
     <ul class="link-list">
-      <li><a href="membership/">Join the club via Ridernet</a></li>
-      <li><a href="events/">Browse club events</a></li>
-      <li><a href="news/">Read the latest news</a></li>
-      <li><a href="get-involved/">Volunteer at working bees and race days</a></li>
+      <li><a href="events/">See what's on</a></li>
+      <li><a href="membership/">Join the club — $30 a year</a></li>
+      <li><a href="meetings/">Come to a meeting</a></li>
+      <li><a href="get-involved/">Volunteer at the GP</a></li>
     </ul>
+    <p class="btn-fill"><a class="button" href="membership/">Become a member</a></p>
   </aside>
 </section>
-<section class="grid thirds">
-  <article class="card media-card card-v">
-    <img class="media-image" src="/assets/media/home-membership.jpg" alt="Membership tile from the legacy site">
-    <h2>Membership</h2>
-    <p>Membership gives riders access to club events, inclusion in the club championship, and the ability to obtain an MNSW race licence through an affiliated club.</p>
-    <p class="btn-fill"><a class="button" href="membership/">Membership details</a></p>
-  </article>
-  <article class="card media-card card-v">
-    <img class="media-image" src="/assets/media/home-events.jpg" alt="Events tile from the legacy site">
-    <h2>Meetings</h2>
-    <p>General meetings are held at 7pm on the first Tuesday of every other month (Feb, Apr, Jun, Aug, Oct, Dec) at the Khartoum Hotel in Kitchener. New faces are always welcome.</p>
-    <p class="btn-fill"><a class="button button-secondary" href="meetings/">Meeting info</a></p>
-  </article>
-  <article class="card media-card card-v">
-    <img class="media-image" src="/assets/media/home-contact.jpg" alt="Contact tile from the legacy site">
-    <h2>Follow the club</h2>
-    <p>For current updates, race announcements, and community news, the club's Facebook page remains the best public channel.</p>
-    <p class="btn-fill"><a class="button button-secondary" href="https://www.facebook.com/cessnockmotorcycleclub/">Visit Facebook</a></p>
-  </article>
+<section class="gallery-grid">
+  <img class="gallery-image" src="/assets/legacy-sweep/gallery-01.jpg" alt="From the club photo archive">
+  <img class="gallery-image" src="/assets/legacy-sweep/gallery-05.jpg" alt="From the club photo archive">
+  <img class="gallery-image" src="/assets/legacy-sweep/gallery-07.jpg" alt="From the club photo archive">
+</section>
+<section class="card gp-banner">
+  <img class="media-image" src="/assets/media/postie-gp-hero.jpg" alt="Australian Postie Bike GP racing through the Cessnock CBD">
+  <div>
+    <p class="meta-line">Our signature event</p>
+    <h2>Australian Postie Bike GP</h2>
+    <p>Team racing on Honda CT110s through closed streets in the Cessnock CBD — hosted and run by the club since 2014.</p>
+    <p><a class="button" href="postie-bike-gp/">About the GP</a></p>
+  </div>
 </section>
 '''.strip(),
     },
     {
         'slug': 'about',
-        'title': 'About the club',
-        'eyebrow': 'About Cessnock MCC',
-        'intro': 'A welcoming club with deep local roots, volunteer energy, and a strong off road racing tradition.',
-        'description': 'About the history, purpose, and supporting information for Cessnock Motor Cycle Club.',
-        'hero_image': 'gallery-general.jpg',
+        'title': 'Our story',
+        'eyebrow': 'Incorporated 1923',
+        'intro': 'The oldest active motorcycle club in Australia — more than a century of riding in Cessnock, and a new chapter built around social riding.',
+        'description': 'The history and present-day focus of Cessnock Motor Cycle Club — the oldest active motorcycle club in Australia, incorporated 1923.',
+        'hero_image': 'assets/legacy-sweep/gallery-03.jpg',
         'content': '''
 <section class="card prose">
-  <p>The existing club website describes Cessnock Motor Cycle Club as a place where knowledge, history, and community all come together. The club has long balanced family-friendly participation with serious racing, and it continues to rely on passionate members and volunteers to keep events running.</p>
-  <p>This rebuild keeps the public information that matters most and makes it easier to maintain. For detailed committee, meeting, and memorial information, use the links below.</p>
+  <p>Cessnock Motor Cycle Club is the <strong>oldest active motorcycle club in Australia</strong>. It was formally incorporated in <strong>1923</strong> — and riders were already gathering here for some years before that, though how many is no longer known. Generations of local families have ridden, raced, volunteered, and made lifelong friends through the club — from grass track and enduro through to the club days and social rides of today.</p>
+  <p>Cessnock earned a reputation as one of Australia's great dirt bike towns. The Australian Four Day Enduro began here, and in 1992 the club community was at the heart of bringing the International Six Days Enduro to Cessnock — the biggest event the town had seen.</p>
 </section>
-<section class="card media-card">
-  <img class="media-image" src="/assets/media/gallery-general.jpg" alt="General club photo from the legacy photo gallery">
+<section class="card">
+  <h2>More than a century, in short</h2>
+  <ul class="timeline">
+    <li><span class="year">Before 1923</span><p>Riders were already gathering around Cessnock. The club's origins predate its paperwork by an unknown number of years.</p></li>
+    <li><span class="year">1923</span><p>The club is formally incorporated in Cessnock. This is the date the club counts from.</p></li>
+    <li><span class="year">1978</span><p>The Australian Four Day Enduro is born in Cessnock, the event's original home.</p></li>
+    <li><span class="year">1992</span><p>The International Six Days Enduro comes to Cessnock, powered by club volunteers.</p></li>
+    <li><span class="year">2013</span><p>The club celebrates its 90th anniversary.</p></li>
+    <li><span class="year">2014</span><p>The first Australian Postie Bike GP takes over the streets of the Cessnock CBD.</p></li>
+    <li><span class="year">2018</span><p>The club runs the Australian Four Day Enduro — its most recent competitive event. <a href="../archive/a4de-2018/">See the archive page</a>.</p></li>
+    <li><span class="year">2023</span><p>The club celebrates its centenary — 100 years since formal incorporation.</p></li>
+    <li><span class="year">Today</span><p>The oldest active motorcycle club in Australia, and a social one: regular rides, club catch-ups, and one very big day of postie bike racing each year.</p></li>
+  </ul>
+</section>
+<section class="card prose">
+  <h2>The club today</h2>
+  <p>It has been some years since the club last ran competitive events, and that's a deliberate change of pace. The focus now is <strong>social riding and club life</strong> — organised rides, regular get-togethers, and keeping the club's history and community alive for the next generation.</p>
+  <p>The club still hosts the <a href="../postie-bike-gp/">Australian Postie Bike GP</a>, our signature public event, and remains a proud part of the Cessnock community.</p>
 </section>
 <section class="grid thirds">
   <article class="card card-v">
     <h2>Club officials</h2>
-    <p>Meet the committee roles carried over from the current public site.</p>
+    <p>Meet the committee who keep the club running.</p>
     <p class="btn-fill"><a class="button button-secondary" href="../officials/">View officials</a></p>
   </article>
   <article class="card card-v">
     <h2>Club constitution</h2>
-    <p>A plain-language summary of the constitution content published on the existing site.</p>
+    <p>A plain-language summary of the club constitution, with the full PDF to download.</p>
     <p class="btn-fill"><a class="button button-secondary" href="../constitution/">Read summary</a></p>
   </article>
   <article class="card card-v">
@@ -123,7 +137,7 @@ PAGES = [
         'slug': 'officials',
         'title': 'Club officials',
         'eyebrow': 'Executive committee',
-        'intro': "Committee roles published on the club's existing public website.",
+        'intro': 'Committee roles published on the club\'s existing public website.',
         'description': 'Executive committee listing for Cessnock Motor Cycle Club.',
         'content': '''
 <section class="card">
@@ -205,14 +219,14 @@ PAGES = [
     {
         'slug': 'meetings',
         'title': 'Club meetings',
-        'eyebrow': 'Bi-monthly catch-up',
+        'eyebrow': 'Monthly catch-up',
         'intro': 'The club welcomes members and interested locals to attend and help shape the season ahead.',
         'description': 'Meeting time and location for Cessnock Motor Cycle Club.',
         'content': '''
 <section class="card prose">
-  <p>Cessnock Motor Cycle Club holds general meetings at <strong>7:00pm on the first Tuesday of every other month (Feb, Apr, Jun, Aug, Oct, Dec)</strong> at the <strong>Khartoum Hotel, Kitchener</strong>.</p>
-  <p>The club's annual general meeting is held in December. Anyone interested in the club is welcome to attend, contribute ideas, and help support the future of local off road riding.</p>
-  <p>Memberships are available online, and meetings are a great place to learn how to get involved with events, volunteering, and club life.</p>
+  <p>Cessnock Motor Cycle Club holds general meetings at <strong>7:00pm on the first Tuesday of every month</strong> at the <strong>Khartoum Hotel, Kitchener</strong>, with two exceptions: there is <strong>no meeting in January</strong>, and in <strong>November</strong> the meeting moves to the <strong>second Tuesday</strong> (the first Tuesday is Melbourne Cup day).</p>
+  <p>Anyone interested in the club is welcome to attend, contribute ideas, and help shape what the club does next — you don't need to be a member.</p>
+  <p>Memberships are available online, and meetings are the easiest way to find out about rides, volunteering, and club life.</p>
   <p><a class="button" href="../membership/">View membership information</a></p>
 </section>
 '''.strip(),
@@ -221,7 +235,7 @@ PAGES = [
         'slug': 'remembrance',
         'title': 'Remembrance',
         'eyebrow': 'In memory of John Hall',
-        'intro': "A tribute carried over from the legacy site, reflecting on John Hall's leadership, generosity, and influence.",
+        'intro': 'A tribute carried over from the legacy site, reflecting on John Hall\'s leadership, generosity, and influence.',
         'description': 'Memorial tribute to John Hall from the Cessnock Motor Cycle Club community.',
         'content': '''
 <section class="card prose">
@@ -235,28 +249,28 @@ PAGES = [
         'slug': 'get-involved',
         'title': 'Get involved',
         'eyebrow': 'The club runs on volunteers',
-        'intro': 'From working bees to race-day jobs, members and families keep the calendar alive.',
-        'description': 'Ways to join, volunteer, and support events at Cessnock Motor Cycle Club.',
+        'intro': 'You don’t need to race — or even ride — to be part of the club.',
+        'description': 'Ways to join in, volunteer, and support Cessnock Motor Cycle Club.',
         'content': '''
 <section class="grid two-up">
   <article class="card prose">
-    <h2>Why get involved?</h2>
-    <p>The club encourages prospective members and their families to join in and support one of the Hunter Valley's leading off road motorcycle communities. The environment is designed to help junior members and novice riders build skills safely, while still giving competitive riders a full calendar of events to enjoy.</p>
-    <p>The strength of the club comes from a passionate member base. Meetings, working bees, track prep, race administration, scoring, marshalling, catering, and scrutineering all depend on volunteers giving some of their time.</p>
+    <h2>A club is its people</h2>
+    <p>Everything the club does — the rides, the catch-ups, the Postie Bike GP — happens because members put their hands up. There are no paid staff; there never have been in more than a century.</p>
+    <p>Whether you ride every weekend or haven't swung a leg over a bike in years, there's a place for you. Plenty of our members are here for the company as much as the riding.</p>
   </article>
   <article class="card">
     <h2>Ways to help</h2>
     <ul class="detail-list">
-      <li>Attend bi-monthly meetings and contribute ideas.</li>
-      <li>Help at working bees before club events.</li>
-      <li>Volunteer on race day as a marshal, scorer, or support crew member.</li>
-      <li>Work toward becoming an official for club-level and higher events.</li>
+      <li><strong>Come to a meeting</strong> — first Tuesday of the month, 7pm at the Khartoum Hotel, Kitchener. You don't need to be a member.</li>
+      <li><strong>Help run the Postie Bike GP</strong> — marshals, setup crew, catering, and a dozen other jobs on the club's biggest day.</li>
+      <li><strong>Lead or plan a social ride</strong> — know a good loop? Put it on the calendar.</li>
+      <li><strong>Help with the history project</strong> — a century of photos, trophies, and stories worth preserving.</li>
     </ul>
   </article>
 </section>
 <section class="card prose">
-  <h2>Officials and accreditation</h2>
-  <p>The legacy site highlights the importance of qualified officials such as race secretaries, race stewards, scrutineers, and clerks of course. Without these roles, events do not run. If you are interested in becoming an official, the first step is normally completing the general seminar and then progressing through the relevant accreditation pathway with Motorcycling NSW.</p>
+  <h2>Ready when you are</h2>
+  <p>Drop the club a line and we'll point you at something useful — or just come along to the next meeting or ride and say g'day.</p>
   <p><a class="button" href="mailto:info@cessnockmcc.com.au?subject=I%20want%20to%20help">Volunteer with the club</a></p>
 </section>
 '''.strip(),
@@ -265,20 +279,21 @@ PAGES = [
         'slug': 'membership',
         'title': 'Membership',
         'eyebrow': 'Join the club',
-        'intro': 'Simple pricing, affiliated racing access, and a welcoming local club community.',
+        'intro': 'Cheap as chips, and you become part of more than a century of history.',
         'description': 'Membership information and pricing for Cessnock Motor Cycle Club.',
         'content': '''
 <section class="grid two-up">
   <article class="card prose">
     <h2>What membership gives you</h2>
     <ul>
-      <li>Access to club events including race days, social rides, and inter-club events.</li>
-      <li>Inclusion in the annual club championship.</li>
-      <li>The ability to obtain an MNSW race licence through an affiliated club.</li>
+      <li>Be part of the oldest active motorcycle club in Australia, riding since before 1923.</li>
+      <li>Join social rides, club days, and get-togethers through the year.</li>
+      <li>Motorcycling NSW affiliation — licensing and event insurance are available through the club when needed.</li>
+      <li>Help keep the Australian Postie Bike GP and the club's community work going.</li>
     </ul>
   </article>
   <article class="card card-accent">
-    <h2>Published prices</h2>
+    <h2>Prices</h2>
     <ul class="detail-list">
       <li><strong>Single membership:</strong> $30.00 per year</li>
       <li><strong>Family membership:</strong> $50.00 per year for up to 6 family members</li>
@@ -287,8 +302,42 @@ PAGES = [
 </section>
 <section class="card prose">
   <h2>How to join</h2>
-  <p>The legacy site directs new members to the Motorcycling NSW Ridernet system. When completing the form, choose <strong>Cessnock Motor Cycle Club</strong> from the club list.</p>
+  <p>Sign up through the Motorcycling NSW Ridernet system — choose <strong>Cessnock Motor Cycle Club</strong> from the club list. Or come along to a meeting and join on the night.</p>
   <p><a class="button" href="https://ridernet.com.au/member/index.cfm?p=register">Join via Ridernet</a></p>
+</section>
+'''.strip(),
+    },
+    {
+        'slug': 'postie-bike-gp',
+        'title': 'Australian Postie Bike GP',
+        'eyebrow': 'Our signature public event',
+        'intro': 'Once a year the club closes the streets of Cessnock for team racing on Honda CT110 postie bikes. It’s the biggest day on our calendar — and everyone’s invited.',
+        'description': 'The Australian Postie Bike GP, hosted by Cessnock Motor Cycle Club in the Cessnock CBD.',
+        'hero_image': 'postie-gp-hero.jpg',
+        'content': '''
+<section class="card prose">
+  <p>The Australian Postie Bike GP is a family-friendly team race held on closed streets around the Cessnock CBD, with local cafes trading al fresco to the crowds lining the course. Teams of riders and pit crew race the iconic Honda CT110 — quick enough to be a spectacle, slow enough that spectators see every lap.</p>
+  <p>The event is run entirely by club volunteers and has become one of the best-known postie bike races in the country. It's a big part of who we are — but it's one day a year. The rest of the club calendar is social rides and catch-ups.</p>
+</section>
+<section class="grid two-up">
+  <article class="card media-card">
+    <img class="media-image" src="/assets/legacy-sweep/postie-gp-2015.jpg" alt="Racing at a past Australian Postie Bike GP">
+  </article>
+  <article class="card media-card">
+    <img class="media-image" src="/assets/media/postie-gp-course-layout.png" alt="Postie Bike GP street circuit layout through central Cessnock">
+  </article>
+</section>
+<section class="grid two-up">
+  <article class="card card-v">
+    <h2>Past events</h2>
+    <p>Results, photos, and course details from previous years are kept in the club archive.</p>
+    <p class="btn-fill"><a class="button button-secondary" href="../archive/postie-bike-gp-2019/">Postie Bike GP 2019</a></p>
+  </article>
+  <article class="card card-v card-accent">
+    <h2>Help run the next one</h2>
+    <p>It takes dozens of volunteers to close the streets and run the day. Marshals, setup, catering — every job matters.</p>
+    <p class="btn-fill"><a class="button" href="../get-involved/">Get involved</a></p>
+  </article>
 </section>
 '''.strip(),
     },
@@ -369,7 +418,7 @@ PAGES = [
         'slug': 'archive/postie-bike-gp-2019',
         'title': 'Australian Postie Bike GP 2019',
         'eyebrow': 'Archive item',
-        'intro': "A preserved summary of one of the club's standout public event pages.",
+        'intro': 'A preserved summary of one of the club\'s standout public event pages.',
         'description': 'Archive summary for the 2019 Australian Postie Bike GP.',
         'content': '''
 <section class="card prose">
