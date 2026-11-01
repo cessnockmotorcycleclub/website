@@ -1,0 +1,18 @@
+{
+  // Cloudflare Workers Builds deploys this repo: it runs `python3 build.py`,
+  // then `wrangler deploy` on main / `wrangler preview` on branches. Both
+  // need this file to know what to ship. The site is static — there is no
+  // Worker script, only the assets below.
+  "name": "cmcc-website",
+  "compatibility_date": "2026-10-23",
+  "assets": {
+    "directory": "./dist",
+    // Workers static assets return a bare Cloudflare 404 by default. This
+    // serves dist/404.html with a 404 status instead, which is what Pages
+    // used to do for free. dist/_redirects is applied before this.
+    "not_found_handling": "404-page"
+  },
+  // Required by `wrangler preview`, and empty is the documented default:
+  // assets and compatibility settings stay at the top level.
+  "previews": {}
+}
