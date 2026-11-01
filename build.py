@@ -14,7 +14,7 @@ DIST = ROOT / "dist"
 
 # Copied verbatim into the site root. Cloudflare Pages publishes dist/ exactly as
 # the build leaves it, so these must be copied here rather than by the CI workflow.
-ROOT_FILES = ('robots.txt',)
+ROOT_FILES = ('robots.txt', '_redirects')
 ASSETS_SRC = ROOT / "assets"
 ASSETS_DST = DIST / "assets"
 CONTENT_ROOT = ROOT / "content"
