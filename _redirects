@@ -1,0 +1,41 @@
+# Legacy ColdFusion ("Member Jungle") site -> static rebuild.
+#
+# Cloudflare Pages serves these from the root of the build output, so this
+# file is listed in ROOT_FILES in build.py and copied into dist/ by the build.
+# Matching is on the path only, first match wins. Query strings are NOT
+# matchable, which is why every /index.cfm?display=NNN page can only be
+# caught by the bare /index.cfm rule near the bottom.
+#
+# Legacy paths that still exist unchanged need no rule here:
+# /meetings /remembrance /get-involved /membership /news /events /sponsors
+
+# Pages whose path changed
+/home                      /                             301
+/about-us                  /about                        301
+/club-officials            /officials                    301
+/club-constitution         /constitution                 301
+/contact-us                /contact                      301
+/photos                    /gallery                      301
+
+# Pages with no equivalent on the new site
+/subscribe                 /contact                      301
+/members-login             /membership                   301
+/Members-Login             /membership                   301
+/privacy                   /                             301
+/Privacy                   /                             301
+/sitemap                   /                             301
+
+# Legacy event pages
+/a4de-2018                 /archive/a4de-2018            301
+/aus-postie-bike-gp-2019   /archive/postie-bike-gp-2019  301
+/aus-postie-bike-gp-2018   /postie-bike-gp               301
+
+# CMS machinery. index.cfm carried every page behind ?display=NNN and the
+# events calendar behind ?start_month=; unmatchable query strings mean the
+# best available landing is the homepage.
+/index.cfm                 /                             301
+/site/index.cfm            /                             301
+/site/*                    /                             301
+
+# Gallery originals, linked directly from old Facebook posts
+/client_images/*           /gallery                      301

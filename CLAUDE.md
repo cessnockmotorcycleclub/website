@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Dependency-free static rebuild of the Cessnock Motor Cycle Club public website. A small Python (stdlib-only) build script generates plain HTML into `dist/`, hosted on **Cloudflare Pages** at `new.cessnockmotorcycleclub.com.au`.
 
-Cloudflare builds straight from this repo on push to `main` (build command `python3 build.py`, output dir `dist`, `PYTHON_VERSION=3.12`). **There is no CI workflow** — `.github/workflows/deploy.yml` and the `CNAME` file were removed when the site moved off GitHub Pages (2026-10-07). Consequence: anything that must land at the site root has to be emitted by `build.py` itself — see `ROOT_FILES` (currently `robots.txt`), which the old workflow used to `cp` by hand.
+Cloudflare builds straight from this repo on push to `main` (build command `python3 build.py`, output dir `dist`, `PYTHON_VERSION=3.12`). **There is no CI workflow** — `.github/workflows/deploy.yml` and the `CNAME` file were removed when the site moved off GitHub Pages (2026-10-07). Consequence: anything that must land at the site root has to be emitted by `build.py` itself — see `ROOT_FILES` (currently `robots.txt` and `_redirects`), which the old workflow used to `cp` by hand.
 
 Cutting over the real domain (`www.cessnockmotorcycleclub.com.au`) off the legacy ColdFusion site is a separate, still-pending step.
 
@@ -34,6 +34,7 @@ Key facts about `build.py`:
 - **URLs are `slug/index.html`** with relative hrefs computed from page depth (`relative_prefix`). Internal links in `content` HTML should be written relative to the page (e.g. `membership/` from home, or use `/`-prefixed asset paths).
 - **Hero images:** a page's `hero_image` (bare filename resolves to `assets/media/`) becomes a CSS background on the hero section; without one, the first `/assets/...` image in the page content is used.
 - **`ROOT_FILES`** is copied verbatim into `dist/` at the end of `main()`. Add to it rather than relying on CI, which no longer exists.
+- **404s and legacy redirects are Cloudflare conventions, not code.** Pages serves `dist/404.html` with a real 404 status for any unmatched path (its asset refs are deliberately root-absolute so it renders at any URL depth), and applies `dist/_redirects` before falling through to it. `_redirects` matching is **path-only, first match wins** — Cloudflare cannot match query strings, so the legacy site's `/index.cfm?display=NNN` URLs (which carried *every* legacy page) can only be caught by the bare `/index.cfm` rule and all land on the homepage. Redirecting them individually would need a Pages Function; the display-id → page map is recoverable from the legacy archive's `index.cfm?module=sitemap.orig`.
 
 Client-side JS is just `assets/site.js` (hamburger menu). Styles are one file, `assets/styles.css`.
 
